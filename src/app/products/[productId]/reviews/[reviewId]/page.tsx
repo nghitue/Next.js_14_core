@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 export default function ReviewDetail({ params }: {
     params: { productId: string; reviewId: string }
 }) {
+    if(Number(params.reviewId) === 1){
+        throw new Error("Error loading review");
+    }
+    
     if (Number(params.reviewId) > 1000) {
         notFound();
     }
