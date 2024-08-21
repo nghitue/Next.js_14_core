@@ -5,8 +5,12 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "hello world",
-  description: "hello world",
+  title: {
+    absolute: "",
+    default: "Next.js 14 Core",
+    template: "%s | Next.js 14 Core from Codevolution"
+  },
+  description: "Next.js 14 Core",
 };
 
 export default function RootLayout({
