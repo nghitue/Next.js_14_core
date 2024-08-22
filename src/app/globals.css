@@ -38,3 +38,49 @@ main {
     text-wrap: balance;
   }
 }
+
+/* cach 1 */
+
+html{
+  font-size: 62.5%;
+}
+
+p,div{
+  /* fz 16px */
+  font-size: 1.6rem;
+}
+
+h1{
+  /* fz 2.4px */
+  font-size: 2.4rem;
+}
+
+h2{
+  /* fz 21px */
+  font-size: 2.1rem;
+}
+
+/* cach 2 Sass/SCSS function to convert from px to rem */
+/* Usage -- font-size: rem(16) */
+
+/* @function rem($pixel){
+  @if math.is-unitless($pixel){
+    @return math.div($pixel, 16) + rem;
+  }@else{
+    @error 'Dont use units when using  the rem() function; only numbers.';
+  }
+} */
+
+
+/* use 100dvh instead of 100vh good for web app */
+
+.img-fit{
+  height: 250px;
+  width: 100%;
+}
+
+.img-fit img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
