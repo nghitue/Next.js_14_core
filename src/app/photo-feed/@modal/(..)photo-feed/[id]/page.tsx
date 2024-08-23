@@ -1,7 +1,7 @@
 import Image from "next/image";
-import wondersImages, { WonderImage } from "../wonders"
+import wondersImages from "../../../wonders"
 
-export default function PhotoPage({ params: { id } }: { params: { id: string } }) {
+export default function PhotoModal({ params: { id } }: { params: { id: string } }) {
     const photo: any = wondersImages.find((p) => p.id === id)
     return (
         <div>
